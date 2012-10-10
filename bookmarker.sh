@@ -7,7 +7,7 @@ function addbm {
 }
 
 function listbm {
-  cat ${bookmarkDir}/bookmarks.sh | sed "s/alias \([^=]*\)='cd \([^']*\)'/\1 -> \2/"
+  cat ${bookmarkDir}/bookmarks.sh | sed "s/alias \([^=]*\)='cd \([^']*\)'/\1 -> \2/" | sort
 }
 
 alias addbm='addbm `pwd`'
